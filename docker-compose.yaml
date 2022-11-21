@@ -16,6 +16,7 @@ services:
       - 8000:8000
     volumes:
       - ./app:/app
+      - dev-static-data:/vol/web
     environment:
       - DB_HOST=db
       - DB_NAME=devdb
@@ -39,3 +40,4 @@ services:
 
 volumes:
   dev-db-data:
+  dev-static-data:
